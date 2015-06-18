@@ -1,0 +1,54 @@
+{{#if show_head_follow}}
+<div class="head-follow twitter-head-follow">
+  <div class="head-title">
+    <span class="head-icon"></span>
+    Twitter
+  </div>
+  <a class="follow-button twitter-follow-button"
+     href="https://twitter.com/TwitterDev"
+     data-show-count="false"
+     data-show-screen-name="false">
+    Follow @TwitterDev</a>
+</div>
+{{/if}}
+<div class="twitter-content pane feed">
+  <a class="twitter-timeline"
+     href="https://twitter.com/{{username}}"
+     data-widget-id="{{widget_id}}"
+     {{#if width}}
+     width="{{width}}"
+     {{/if}}
+     {{#if height}}
+     height="{{height}}"
+     {{/if}}
+     {{#if chrome}}
+     data-chrome="{{chrome}}"
+     {{/if}}
+     {{#if limit}}
+     data-tweet-limit="{{limit}}"
+     {{/if}}
+     {{#if aria_polite}}
+     data-aria-polite="{{aria_polite}}"
+     {{/if}}>
+    Tweets from {{username}}
+  </a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <noscript>
+    <p>
+      <a class="noBorder"
+         href="https://twitter.com/{{username}}">
+        Tweets from {{username}}
+      </a>
+    </p>
+  </noscript>
+</div>
+<noscript>
+  <div class="error">
+    <p>
+      <a class="noBorder"
+         href="https://twitter.com/{{username}}">
+        Tweets from {{username}}
+      </a>
+    </p>
+  </div>
+</noscript>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>social timeline</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/social-timeline.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <style>
+      .examples .social-timeline {
+        float: left;
+        width: 250px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="examples">
+      <div class="social-timeline"
+           data-type="twitter"
+           data-show-head-follow="true"
+           data-username="@Brasil2016"
+           data-widget-id="311126511430270977">
+      </div>
+      <div class="social-timeline"
+           data-type="facebook"
+           data-show-head-follow="true"
+           data-username="brasilgov2016">
+      </div>
+      <div class="social-timeline"
+           data-type="instagram"
+           data-show-head-follow="true"
+           data-username="2016brasil"
+           data-user-id="1434016255"
+           data-access-token="141970.467ede5.edbc9c37472d41b790e1db8948793f11">
+      </div>
+      <div class="social-timeline"
+           data-type="gplus"
+           data-show-head-follow="true"
+           data-username="+Brasil2016"
+           data-api-key="AIzaSyDAVOMugZj0B-2NGi2TuQxIKWNSHbxYaKk">
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/social-timeline.js -->
+    <script src="/bower_components/instafeed.js/instafeed.js"></script>
+    <script src="bower_components/handlebars/handlebars.runtime.js"></script>
+    <script src="/bower_components/momentjs/min/moment-with-locales.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/base.js"></script>
+    <script src="templates/twitter.js"></script>
+    <script src="scripts/twitter.js"></script>
+    <script src="templates/facebook20.js"></script>
+    <script src="scripts/facebook20.js"></script>
+    <script src="templates/facebook23.js"></script>
+    <script src="scripts/facebook23.js"></script>
+    <script src="templates/instagram.js"></script>
+    <script src="scripts/instagram.js"></script>
+    <script src="templates/gplus.js"></script>
+    <script src="scripts/gplus.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
